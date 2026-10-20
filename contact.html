@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rezerwacja</title>
+    <meta name="description" content="Student project website - HTML skeleton">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">MySite</a>
+        
+    </header>
+    <main class="site-main">
+        <section class="hero" aria-label="Hero section">
+            <h1 id="title">Zarezerwuj lokal</p>
+        </section>
+        <section class="content" aria-label="Main content">
+            <h2>Wypełnij formularz:</h2>
+            <form action="contact.html" method="post" >
+                <div>
+                    <label for="Data">Wybierz datę: </label><br>
+                    <input type="date" name="Data" required/>
+                </div>
+                <div>
+                    <label for="Imie">Imię: </label><br>
+                    <input type="text" name="Imie" required/>
+                </div>
+                <div>
+                    <label for="Nazwisko">Nazwisko: </label><br>
+                    <input type="text" name="Nazwisko" required minlength="3"/>
+                </div>
+                <div>
+                    <label for="Telefon">Nr telefonu: </label><br>
+                    <input type="tel" name="Telefon" required/>
+                </div>
+                <div>
+                    <label for="Rodzaj">Rodzaj: </label>,<br>
+                    <select name="Rodzaj" id="Rodzaj">
+                        <option value="Wesele">Wesele</option>
+                        <option value="Urodziny">Urodziny</option>
+                        <option value="Inne">Inne (opisz)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Wiadomosc">Wiadomosc: </label><br>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Wyślij">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2026 MySite. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
